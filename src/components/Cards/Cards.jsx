@@ -9,9 +9,10 @@ const Cards = () => {
     
       {cardsData.map((card,id)=>{
         return(
-        <div className='Card-container'>
+        <div className='Card-container' key={id}>
           
           <Card 
+            
             title={card.title}
             color={card.color}
             barValue={card.barValue}
