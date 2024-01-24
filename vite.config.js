@@ -9,7 +9,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external: ['@iconscout/react-unicons'],
+      external: ['@iconscout/react-unicons', 'react-apexcharts' ],
     },
   },
 })
