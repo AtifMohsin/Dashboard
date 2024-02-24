@@ -4,9 +4,8 @@
     position: relative;
     padding-top: 4rem;
     transition: all 300ms ease;
-    background-color:#030637;
-    border-radius: 2rem;
-    color: white;
+    background-color:white;
+    color: black;
   }
   /* logo */
   .bars{
@@ -23,15 +22,8 @@
     justify-content: center;
     height: 4%;
   }
-  .logo > span > span {
-    color: var(--blue);
-  }
   
-  .logo > img {
-    width: 3rem;
-    height: 3rem;
-  }
-  
+ 
   
   /* menu */
   .menu {
@@ -56,6 +48,7 @@
   .menuItem:hover {
     cursor: pointer;
     
+    
   }
   
   .menu .menuItem:last-child {
@@ -65,15 +58,15 @@
   }
   
   .active {
-    background: white;
+    background: #0090D4;
     margin-left: 0;
-    color: black;
+    color: white;
   }
   .active::before {
     content: "";
     width: 8px;
     height: 100%;
-    background: #0A1D56;
+    background: #0090D4;
     margin-right: calc(1rem - 8px);
   }
   

@@ -2,8 +2,8 @@
     display: flex;
     flex: 1;
     height: 7rem !important;
-    border-radius: 0.7rem;
-    color: white;
+    
+    color: black;
     padding: 1rem;
     position: relative;
     cursor: pointer;
@@ -24,16 +24,16 @@
     width: 4rem !important;
     overflow: visible;
   }
-  .CircularProgressbar-path {
+  /* .CircularProgressbar-path {
     stroke: white !important;
     stroke-width: 12px !important;
     filter: drop-shadow(2px 4px 6px white);
-  }
+  } */
   .CircularProgressbar-trail {
     display: none;
   }
   .CircularProgressbar-text {
-    fill: white !important;
+    fill: black !important;
   }
   
   .radialBar > span {
@@ -104,3 +104,4 @@
     height: 50%;
     left: 25px;
     width: 80%;
+  }

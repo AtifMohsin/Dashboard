@@ -1,6 +1,8 @@
 .Cards {
     display: flex;
     gap: 10px;
+    background-color: #0090D4;
+
   }
   .Card-container{
     width: 100%;

@@ -10,10 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/styled": "^11.11.0",
+    "@iconscout/react-unicons": "^2.0.2",
     "@iconscout/unicons": "^4.0.8",
-    "apexcharts": "^3.45.1",
+    "@mui/material": "^5.15.10",
+    "apexcharts": "^3.46.0",
     "framer-motion": "^10.18.0",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.1",
+    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
