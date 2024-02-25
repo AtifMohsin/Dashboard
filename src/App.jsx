@@ -15,7 +15,7 @@ function App() {
       <div className='AppGlass'>
           <Sidebar />
           <Main />
-          <Rightside />
+          {/* <Rightside /> */}
       </div>
      
 

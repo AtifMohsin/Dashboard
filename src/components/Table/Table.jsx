@@ -57,7 +57,7 @@ const makeStyle=(status)=>{
 export default function BasicTable() {
   return (
       <div className="Table">
-      <h3>New Projects</h3>
+      <h3 className="text-2xl px-10 mb-10 text-gray-500 font-bold">Overview</h3>
         <TableContainer
           component={Paper}
           style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
