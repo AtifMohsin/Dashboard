@@ -8,23 +8,26 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import "./Table.css";
 
-function createData(name, trackingId, date, status) {
-  return { name, trackingId, date, status };
+function createData(name, ipaddress, date, status , version) {
+  return { name, ipaddress, date, status ,version };
 }
 
 const rows = [
-  createData("Lasania Chiken Fri", 18908424, "2 March 2022", "Approved"),
-  createData("Big Baza Bang ", 18908424, "2 March 2022", "Pending"),
-  createData("Mouth Freshner", 18908424, "2 March 2022", "Approved"),
-  createData("Cupcake", 18908421, "2 March 2022", "Delivered"),
-  createData("Lasania Chiken Fri", 18908424, "2 March 2022", "Approved"),
-  createData("Big Baza Bang ", 18908424, "2 March 2022", "Pending"),
-  createData("Mouth Freshner", 18908424, "2 March 2022", "Approved"),
-  createData("Cupcake", 18908421, "2 March 2022", "Delivered"),
-  createData("Lasania Chiken Fri", 18908424, "2 March 2022", "Approved"),
-  createData("Big Baza Bang ", 18908424, "2 March 2022", "Pending"),
-  createData("Mouth Freshner", 18908424, "2 March 2022", "Approved"),
-  createData("Cupcake", 18908421, "2 March 2022", "Delivered"),
+  createData("Pakans", '10.50.53.11', "2 March 2022", "Approved" ,"3.2.9"),
+  createData("Saulateau First Nation ", '10.52.29.11', "2 March 2022", "Pending","5.0.0.17"),
+  createData("CFB Building 69", "10.53.54.11", "2 March 2022", "Approved","3.2.9" ),
+  createData("Hay River", "10.53.36.11", "2 March 2022", "Delivered", "3.2.9"),
+  createData("Cold Lake Building", "10.52.43.11", "2 March 2022", "Approved","5.0.0.17"),
+  createData("Pakans", '10.50.53.11', "2 March 2022", "Approved" ,"3.2.9"),
+  createData("Saulateau First Nation ", '10.52.29.11', "2 March 2022", "Pending","5.0.0.17"),
+  createData("CFB Building 69", "10.53.54.11", "2 March 2022", "Approved","3.2.9" ),
+  createData("Hay River", "10.53.36.11", "2 March 2022", "Delivered", "3.2.9"),
+  createData("Cold Lake Building", "10.52.43.11", "2 March 2022", "Approved","5.0.0.17"),
+  createData("Pakans", '10.50.53.11', "2 March 2022", "Approved" ,"3.2.9"),
+  createData("Saulateau First Nation ", '10.52.29.11', "2 March 2022", "Pending","5.0.0.17"),
+  createData("CFB Building 69", "10.53.54.11", "2 March 2022", "Approved","3.2.9" ),
+  createData("Hay River", "10.53.36.11", "2 March 2022", "Delivered", "3.2.9"),
+  createData("Cold Lake Building", "10.52.43.11", "2 March 2022", "Approved","5.0.0.17"),
 ];
 
 
@@ -54,7 +57,7 @@ const makeStyle=(status)=>{
 export default function BasicTable() {
   return (
       <div className="Table">
-      <h3>Recent Orders</h3>
+      <h3>New Projects</h3>
         <TableContainer
           component={Paper}
           style={{ boxShadow: "0px 13px 20px 0px #80808029" }}
@@ -62,10 +65,11 @@ export default function BasicTable() {
           <Table sx={{ minWidth: 650 }} aria-label="simple table">
             <TableHead>
               <TableRow>
-                <TableCell>Product</TableCell>
-                <TableCell align="left">Tracking ID</TableCell>
-                <TableCell align="left">Date</TableCell>
+                <TableCell>Project Name </TableCell>
+                <TableCell align="left">Ip Address</TableCell>
                 <TableCell align="left">Status</TableCell>
+                <TableCell align="left">Version</TableCell>
+                <TableCell align="left">Date</TableCell>
                 <TableCell align="left"></TableCell>
               </TableRow>
             </TableHead>
@@ -78,11 +82,13 @@ export default function BasicTable() {
                   <TableCell component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="left">{row.trackingId}</TableCell>
-                  <TableCell align="left">{row.date}</TableCell>
+                  <TableCell align="left">{row.ipaddress}</TableCell>
+                  
                   <TableCell align="left">
                     <span className="status" style={makeStyle(row.status)}>{row.status}</span>
                   </TableCell>
+                  <TableCell align="left">{row.version}</TableCell>
+                  <TableCell align="left">{row.date}</TableCell>
                   <TableCell align="left" className="Details">Details</TableCell>
                 </TableRow>
               ))}
